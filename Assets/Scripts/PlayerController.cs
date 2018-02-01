@@ -5,13 +5,17 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour {
 
     public LayerMask layerMask;
+    private Rigidbody2D rb;
+    private Animator animator;
 	// Use this for initialization
-	void Start () {
-		
+	void Awake () {
+        rb = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
 	}
 	
 	// Update is called once per frame
 	void Update () {
+        
         
         if (Input.GetMouseButtonDown(0))
         {

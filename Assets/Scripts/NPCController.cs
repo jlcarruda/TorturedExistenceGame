@@ -44,7 +44,6 @@ public class NPCController : MonoBehaviour {
             bc.size = s;
             //bc.offset = new Vector2((s.x / 2), 0);
             bc.isTrigger = true;
-
         }
 	}
 }
